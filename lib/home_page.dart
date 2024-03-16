@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+  const Homepage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
         child: Column(
-          children: [LeafBorderText(), LeafBorderText(), LeafBorderText(), LeafBorderText()],
+          children: [
+            LeafBorderText(),
+            LeafBorderText(),
+            LeafBorderText(),
+            LeafBorderText(),
+          ],
         ),
       ),
     );
@@ -16,20 +21,22 @@ class Homepage extends StatelessWidget {
 }
 
 class LeafBorderText extends StatelessWidget {
-  const LeafBorderText({
-    super.key,
-  });
+  const LeafBorderText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      
-      child: const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text(
-          "Halo Dunia",
-          style: TextStyle(color: Colors.blue),
-        ),
+      margin: const EdgeInsets.all(10.0),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: Colors.amber[600],
+        borderRadius: BorderRadius.circular(8.0),
+      ),
+      width: 100.0,
+      height: 50.0,
+      child: const Text(
+        "Halo Dunia",
+        style: TextStyle(color: Colors.black),
       ),
     );
   }
