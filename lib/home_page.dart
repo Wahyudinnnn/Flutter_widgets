@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: Column(
-          children: [LeafBorderText(), LeafBorderText(), LeafBorderText()],
+          children: [LeafBorderText(), LeafBorderText(), LeafBorderText(), LeafBorderText()],
         ),
       ),
     );
